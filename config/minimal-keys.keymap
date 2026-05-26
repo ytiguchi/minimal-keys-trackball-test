@@ -62,7 +62,7 @@
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 3 ENTER    &lt 1 BACKSPACE  &lt 2 KP_ENTER                             &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_1 {
