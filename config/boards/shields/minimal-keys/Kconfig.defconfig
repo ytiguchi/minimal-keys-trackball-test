@@ -24,7 +24,7 @@ endif
 if SHIELD_MINIMAL_KEYS_L_CENTRAL_TEST
 
 config ZMK_KEYBOARD_NAME
-    default "minimal-keys_L_test"
+    default "mk_L_test"
 
 config ZMK_SPLIT
     default y
