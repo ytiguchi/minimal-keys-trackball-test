@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #undef ZMK_POINTING_DEFAULT_SCRL_VAL
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
 
@@ -24,7 +25,7 @@
         };
     };
 
-      behaviors {
+    behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -55,19 +56,19 @@
 
         default_layer {
             bindings = <
-&kp Q     &kp W         &kp E              &kp R                  &kp T                                  &kp Y            &kp U  &kp I      &kp O    &kp P
-&kp A     &kp S         &kp D              &kp F                  &kp G        &mkp MB1       &kp COLON  &kp H            &kp J  &kp K      &kp L    &kp MINUS
-&kp Z     &kp X         &kp C              &kp V                   &kp B        &mkp MB2       &kp LANG1  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp RCMD  &kp LEFT_ALT  &kp RIGHT_CONTROL  &mt LEFT_COMMAND LANG2  &lt 1 SPACE  &lt 3 ENTER    &lt 1 DEL  &lt 2 BACKSPACE                             &kp RIGHT_SHIFT
+&kp Q      &kp W         &kp E             &kp R          &kp T                                       &kp Y            &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D             &kp F          &kp G        &mkp MB1       &kp LANGUAGE_1  &kp H            &kp J  &kp K      &kp L    &kp MINUS
+&kp Z      &kp X         &kp C             &kp V          &kp B        &mkp MB2       &kp LANGUAGE_2  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp BACKSPACE  &lt 1 SPACE  &lt 3 ENTER    &lt 1 DEL       &lt 2 BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
-          sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         layer_1 {
             bindings = <
 &kp ESCAPE        &kp LEFT_SHIFT    &mkp MB2           &mkp MB1      &mkp MB3                                       &kp F1     &kp F6                    &kp UP_ARROW               &kp RG(S)        &kp RG(R)
-&kp TAB           &kp HASH          &kp RS(AMPERSAND)  &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp EQUAL  &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp F10
+&kp TAB           &kp HASH          &kp RS(PERCENT)    &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp EQUAL  &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp F10
 &kp PERCENT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT        &kp BACKSLASH    &kp SEMI     &kp RIGHT_SHIFT  &kp RCMD   &kp RS(RG(LEFT_BRACKET))  &kp RS(LG(RIGHT_BRACKET))  &kp RS(LG(T))    &kp F11
 &kp LEFT_COMMAND  &kp LG(F)         &kp LG(X)          &kp LG(Z)     &kp LS(LG(Z))    &kp LG(Y)    &kp RG(A)        &kp RG(X)                                                                        &kp RIGHT_SHIFT
             >;
@@ -78,7 +79,7 @@
         layer_2 {
             bindings = <
 &kp DEL               &kp PERIOD  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9                                  &kp CARET         &kp AMPERSAND       &kp RS(UP_ARROW)    &kp F4               &kp F5
-&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE  &kp EXCLAMATION   &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp PERCENT
+&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE  &kp EXCLAMATION   &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp F7
 &mt LEFT_SHIFT ASTRK  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL       &kp LG(SPACE)   &kp LEFT_BRACKET  &kp LG(C)           &kp LG(X)           &kp LG(V)            &kp F12
 &kp RG(SPACE)         &kp PLUS    &kp NUMBER_0  &kp RS(RG(V))  &kp RG(C)     &kp RG(V)       &trans          &trans                                                                         &kp PIPE
             >;
