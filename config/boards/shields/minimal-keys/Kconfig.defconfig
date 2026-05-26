@@ -20,3 +20,16 @@ config ZMK_SPLIT
     default y
 
 endif
+
+if SHIELD_MINIMAL_KEYS_L_CENTRAL_TEST
+
+config ZMK_KEYBOARD_NAME
+    default "minimal-keys_L_test"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif

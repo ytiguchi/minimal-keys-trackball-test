@@ -3,3 +3,6 @@ config SHIELD_MINIMAL_KEYS_R
 
 config SHIELD_MINIMAL_KEYS_L
     def_bool $(shields_list_contains,minimal-keys_L)
+
+config SHIELD_MINIMAL_KEYS_L_CENTRAL_TEST
+    def_bool $(shields_list_contains,minimal-keys_L_central_test)
