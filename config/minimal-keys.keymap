@@ -69,21 +69,21 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE        &kp LEFT_SHIFT    &mkp MB2           &mkp MB1      &mkp MB3                                       &kp F1     &kp F6                    &kp UP_ARROW               &kp RG(S)        &kp RG(R)
-&kp TAB           &kp HASH          &kp PERCENT        &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp EQUAL  &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp K_SCROLL_UP
-&kp PERCENT       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AT        &kp BACKSLASH    &kp SEMI     &kp RIGHT_SHIFT  &kp RCMD   &kp RS(RG(LEFT_BRACKET))  &kp RS(LG(RIGHT_BRACKET))  &kp RS(LG(T))    &kp K_SCROLL_DOWN
-&kp LEFT_COMMAND  &kp LG(F)         &kp LG(X)          &kp LG(Z)     &kp LS(LG(Z))    &kp LG(Y)    &kp RG(A)        &kp RG(X)                                                                        &kp RIGHT_SHIFT
+&kp ESCAPE        &kp Q              &mkp MB2     &mkp MB1      &mkp MB3                                       &kp F7                 &kp F8                    &kp UP_ARROW               &kp RG(S)        &kp RG(R)
+&kp TAB           &kp LEFT_BRACKET   &kp PERCENT  &kp QUESTION  &kp EXCLAMATION  &kp COLON    &kp RS(RCMD)     &kp LEFT_PARENTHESIS   &kp LEFT_ARROW            &kp DOWN_ARROW             &kp RIGHT_ARROW  &kp K_SCROLL_UP
+&kp PERCENT       &kp RIGHT_BRACKET  &kp POUND    &kp AT        &kp BACKSLASH    &kp SEMI     &kp RIGHT_SHIFT  &kp RIGHT_PARENTHESIS  &kp RS(RG(LEFT_BRACKET))  &kp RS(LG(RIGHT_BRACKET))  &kp RS(LG(T))    &kp SLASH
+&kp LEFT_COMMAND  &kp LG(F)          &kp LG(X)    &kp LG(Z)     &kp LS(LG(Z))    &kp LG(Y)    &kp RG(A)        &kp RG(X)                                                                                    &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_2 {
             bindings = <
-&kp DEL               &kp PERIOD  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9                                  &kp CARET         &kp AMPERSAND       &kp RS(UP_ARROW)    &kp F4               &kp F5
-&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE  &kp EXCLAMATION   &kp RS(LEFT_ARROW)  &kp RS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp F7
-&mt LEFT_SHIFT ASTRK  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL       &kp LG(SPACE)   &kp LEFT_BRACKET  &kp LG(C)           &kp LG(X)           &kp LG(V)            &kp F12
-&kp RG(SPACE)         &kp PLUS    &kp NUMBER_0  &kp RS(RG(V))  &kp RG(C)     &kp RG(V)       &trans          &trans                                                                         &kp PIPE
+&kp DEL               &kp PERIOD  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9                                  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp F4               &kp F5
+&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(RIGHT_ARROW)  &kp F7
+&mt LEFT_SHIFT ASTRK  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL       &kp LG(SPACE)   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(V)            &kp F12
+&kp RG(SPACE)         &kp PLUS    &kp NUMBER_0  &kp RS(RG(V))  &kp RG(C)     &kp RG(V)       &trans          &kp NUMBER_0                                                   &kp PIPE
             >;
 
             sensor-bindings =
