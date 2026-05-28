@@ -80,10 +80,10 @@
 
         layer_2 {
             bindings = <
-&kp DEL               &kp PERIOD  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9                                  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp F4               &kp F5
-&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(RIGHT_ARROW)  &kp F7
-&mt LEFT_SHIFT ASTRK  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL       &kp LG(SPACE)   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(V)            &kp F12
-&kp RG(SPACE)         &kp PLUS    &kp NUMBER_0  &kp RS(RG(V))  &kp RG(C)     &kp RG(V)       &trans          &kp NUMBER_0                                                   &kp PIPE
+&kp DEL               &kp PERIOD  &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9                                    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp F4               &kp F5
+&kp BACKSPACE         &kp COMMA   &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6  &kp NUMBER_0    &kp UNDERSCORE    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(RIGHT_ARROW)  &kp F7
+&mt LEFT_SHIFT ASTRK  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp EQUAL       &kp LG(SPACE)     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(V)            &kp F12
+&kp RG(SPACE)         &kp PLUS    &kp NUMBER_0  &kp RS(RG(V))  &kp RG(C)     &kp RG(V)       &kp RC(NUMBER_0)  &kp NUMBER_0                                                   &kp PIPE
             >;
 
             sensor-bindings =
